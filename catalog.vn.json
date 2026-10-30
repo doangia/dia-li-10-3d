@@ -1,0 +1,581 @@
+{
+ "source": "https://github.com/smithjohn78390/tongjiang-lab",
+ "license": "CC BY-NC 4.0 (phi thương mại, ghi nguồn Tongjiang Lab, ghi rõ đã sửa đổi)",
+ "note": "Bộ Địa lí 10 KNTT đã hoàn thành giai đoạn port/dịch (31/10/2026): 5 bài có từ trước  (river, river-kntt, insolation, earth-motion, karst) + 10 bài nhóm A dịch đầy đủ + 2 bài nhóm B viết mới (song-hong, dia-doi) = 17 bài. Tất cả đều đã kiểm chứng headless (0 chữ Hán hiển thị, không Uncaught). Nhóm C (Bài 4, 8, 15, 17 — cần cảnh 3D mới) và nhóm D (27 bài — không hợp 3D) chưa làm, xem DANH-SACH-DIA-LI-10-KNTT.md. Chưa đối chiếu sách giấy cho bất kỳ bài nào; đối chiếu từ nguồn giải bài độc lập, xem NGHIEN-CUU-KNTT-PHAN-2.md.",
+ "lessons": [
+  {
+   "slug": "river-kntt",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "河流地貌的发育",
+   "title_vn": "Địa hình do nước chảy tạo thành",
+   "question_original": "长江镇江段的岸线为什么持续向北推移？",
+   "question_vn": "Đồng bằng sông Hồng và đồng bằng sông Cửu Long được hình thành chủ yếu bởi quá trình nào? (Vận dụng 1, tr.26)",
+   "textbook_original": [
+    "选择性必修1 自然地理基础 · 第二章 地表形态的塑造 · 第三节 河流地貌的发育"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 3: Thạch quyển",
+    "lesson": "Bài 7: Nội lực và ngoại lực",
+    "pages": "tr.24–26"
+   },
+   "textbook_vn_note": "Đối chiếu từ 5 nguồn giải bài độc lập (xem KE-HOACH-KNTT-DIA-LI-10.md); chưa đối chiếu với sách giấy. Thuật ngữ 'nón phóng vật' cần giáo viên chốt.",
+   "steps_original": [
+    "认识沙盘",
+    "冲积扇",
+    "河漫滩",
+    "三角洲"
+   ],
+   "steps_vn": [
+    "Làm quen với sa bàn",
+    "Quạt bồi tích (nón phóng vật)",
+    "Bãi bồi",
+    "Châu thổ"
+   ],
+   "source_dir": "src/lessons/river-kntt",
+   "built_file": "dist/river-kntt-step.html",
+   "cover_original": "covers/river-step.webp",
+   "status": "ban_thu_nghiem_kntt_2026-10-30, da_kiem_chung_headless",
+   "translation_note": "Bản thử nghiệm theo KNTT Bài 7: giữ 4/8 bước (bỏ các bước định lượng và ví dụ Trường Giang), 4 câu quiz (3 cũ + 1 Vận dụng 1). Tạo bằng tools/make-river-kntt.mjs từ bài river đã dịch.",
+   "steps": 4,
+   "quiz": 4
+  },
+  {
+   "slug": "river-step",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "河流地貌的发育",
+   "title_vn": "Sự phát triển của địa hình sông",
+   "question_original": "长江镇江段的岸线为什么持续向北推移？",
+   "question_vn": "Vì sao bờ sông đoạn Trấn Giang của sông Trường Giang liên tục dịch chuyển về phía bắc?",
+   "textbook_original": [
+    "选择性必修1 自然地理基础 · 第二章 地表形态的塑造 · 第三节 河流地貌的发育"
+   ],
+   "textbook_vn": null,
+   "textbook_vn_note": "Bản đầy đủ 8 bước CHƯA ĐỐI CHIẾU 1:1 với SGK Việt Nam (vượt SGK về độ sâu). Bản rút gọn theo KNTT Bài 7 xem entry river-kntt.",
+   "steps_original": [
+    "认识沙盘",
+    "山区V形谷",
+    "河谷剖面",
+    "冲积扇",
+    "凹岸凸岸",
+    "河漫滩",
+    "三角洲",
+    "考核：汛期来了"
+   ],
+   "steps_vn": [
+    "Làm quen với sa bàn",
+    "Thung lũng chữ V ở miền núi",
+    "Mặt cắt thung lũng sông",
+    "Quạt bồi tích",
+    "Bờ lõm – bờ lồi",
+    "Bãi bồi",
+    "Châu thổ",
+    "Kiểm tra: Mùa lũ đến"
+   ],
+   "source_dir": "src/lessons/river",
+   "built_file": "dist/river-step.html",
+   "cover_original": "covers/river-step.webp",
+   "status": "da_viet_hoa_toan_bo_2026-10-30, textbook_vn_chua_doi_chieu",
+   "translation_note": "Nội dung, nhãn 3D và giao diện chung đã dịch hết sang tiếng Việt (xem TRANSLATION.md). Ví dụ gốc vẫn là sông Trường Giang đoạn Trấn Giang; số trang 'sách gốc tr.33–37' là của sách PEP Trung Quốc.",
+   "steps": 8,
+   "quiz": 5
+  },
+  {
+   "slug": "earth-motion",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "地球运动的地理意义",
+   "title_vn": "Ý nghĩa địa lí của chuyển động Trái Đất",
+   "question_original": "同一时刻，为什么北京是中午、纽约是半夜，而夏天的白天又比冬天长？",
+   "question_vn": "Cùng một thời điểm, vì sao Bắc Kinh là buổi trưa, Niu Y-oóc lại là nửa đêm, mà ban ngày mùa hè lại dài hơn mùa đông?",
+   "textbook_original": [
+    "选择性必修1 · 第一章「地球的运动」（第一节 p.2–6、第二节 p.7–14）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 2: Trái Đất",
+    "lesson": "Bài 5: Hệ quả địa lí các chuyển động của Trái Đất",
+    "pages": "tr.17–20"
+   },
+   "textbook_vn_note": "Đối chiếu từ VnDoc + kenhgiaovien (xem BAI-5-KNTT.md); chưa đối chiếu sách giấy. Bước 1, 3, 5, 6 thuộc mục 1 (tự quay, giờ, múi giờ); bước 2, 7, 8 thuộc mục 2 (quanh Mặt Trời); bước 4 dùng cho cả hai mục. Bài kiểm tra World Cup là bài tập đổi múi giờ, nối với Luyện tập 1 + Vận dụng 1 của Bài 5.",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 9,
+   "quiz": 8,
+   "built_file": "dist/earth-motion-step.html",
+   "source_dir": "src/lessons/earth-motion"
+  },
+  {
+   "slug": "insolation",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "太阳直射点的回归运动与四季、五带",
+   "title_vn": "Chuyển động hồi quy của điểm Mặt Trời chiếu thẳng, bốn mùa và năm đới",
+   "question_original": "学校所在地的正午太阳高度和正午太阳方向，一年里为什么有规律地变化？",
+   "question_vn": "Độ cao Mặt Trời lúc chính ngọ và hướng Mặt Trời lúc chính ngọ ở nơi em ở, vì sao trong năm lại thay đổi có quy luật?",
+   "textbook_original": [
+    "选择性必修1 · 第一章「地球的运动」（p.2–14，本课取 p.10–14）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 2: Trái Đất",
+    "lesson": "Bài 5: Hệ quả địa lí các chuyển động của Trái Đất",
+    "pages": "tr.17–20"
+   },
+   "textbook_vn_note": "Đối chiếu từ VnDoc + kenhgiaovien (xem BAI-5-KNTT.md); chưa đối chiếu sách giấy. Bước 1–7 thuộc mục 2 (quanh Mặt Trời, bốn mùa); bước 8 (năm đới) + bài kiểm tra thuộc Bài 10 KNTT, giữ lại để bài trọn vẹn, dạy Bài 5 thì bỏ qua.",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 9,
+   "quiz": 9,
+   "built_file": "dist/insolation-step.html",
+   "source_dir": "src/lessons/insolation"
+  },
+  {
+   "slug": "karst",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "喀斯特地貌的形成与识别",
+   "title_vn": "Địa hình karst hình thành và nhận biết như thế nào",
+   "question_original": "徐霞客写的「峭峰离立，分行竞颖」——这些像从地里长出来的尖峰，是怎么一块岩层变出来的？",
+   "question_vn": "Từ Hà Khách viết «Đỉnh nhọn đứng tách rời, xếp hàng khoe sắc» — những đỉnh nhọn như mọc lên từ lòng đất ấy, một tầng đá đã biến thành chúng như thế nào?",
+   "textbook_original": [
+    "人教版必修第一册 · 第四章第一节「常见地貌类型」中的「喀斯特地貌」（p.66–69）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 3: Thạch quyển",
+    "lesson": "Bài 7: Nội lực và ngoại lực",
+    "pages": "tr.24–26"
+   },
+   "textbook_vn_note": "Karst thuộc mục 2 (ngoại lực — phong hoá hoá học, tr.26) và Vận dụng 2 (hang động nổi tiếng ở Việt Nam, tr.26). Đối chiếu từ VnDoc + kenhgiaovien (xem KE-HOACH-KNTT-DIA-LI-10.md); chưa đối chiếu sách giấy. Ví dụ Quảng Tây / Quý Châu / Vân Nam giữ nguyên như sách gốc; ví dụ Việt Nam (Hạ Long, Phong Nha, Tràng An, Sơn Đoòng) ghi trong tài liệu đối chiếu.",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 7,
+   "quiz": 8,
+   "built_file": "dist/karst-step.html",
+   "source_dir": "src/lessons/karst"
+  },
+  {
+   "slug": "tectonic",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "构造地貌的形成",
+   "title_vn": "Sự hình thành địa hình kiến tạo",
+   "textbook_original": [
+    "人教版选择性必修 1「自然地理基础」· 第二章第二节「构造地貌的形成」（p.26–32）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 3: Thạch quyển",
+    "lesson": "Bài 6: Thạch quyển, thuyết kiến tạo mảng",
+    "pages": "tr.21–23"
+   },
+   "textbook_vn_note": "Bài 6 đối chiếu từ loigiaihay + hoidapvietjack + kenhgiaovien + tech12h (xem NGHIEN-CUU-KNTT-PHAN-2.md mục 1); chưa đối chiếu với sách giấy. Bài mô phỏng này sâu hơn SGK: SGK chỉ yêu cầu khái niệm thạch quyển, thuyết kiến tạo mảng và kết quả xô vào nhau / tách xa nhau (Hi-ma-lay-a, An-đét, sống núi ngầm Đại Tây Dương); nếp lồi / nếp lõm / đứt gãy trong bài là cơ chế chi tiết của sách gốc. SGK Bài 6 KHÔNG có ví dụ Việt Nam.",
+   "steps_vn": [
+    "Uốn cong",
+    "Phân biệt",
+    "Đảo ngược",
+    "Dịch chuyển",
+    "Nâng lên — hạ xuống",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/tectonic",
+   "built_file": "dist/tectonic-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 6,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 6 bước, 8 quiz. Ví dụ Hoa Sơn / Lư Sơn / Thái Sơn giữ nguyên như sách gốc; nếp lồi / nếp lõm / đứt gãy là cơ chế chi tiết của sách gốc, sâu hơn SGK."
+  },
+  {
+   "slug": "heating",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "大气受热过程",
+   "title_vn": "Quá trình nóng lên của khí quyển",
+   "textbook_original": [
+    "人教版必修第一册 · 第二章第二节「大气受热过程」（p.34–35），自学窗「温室气体的发现」（p.40–41）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 4: Khí quyển",
+    "lesson": "Bài 9: Khí quyển, các yếu tố khí hậu",
+    "pages": "tr.28–34"
+   },
+   "textbook_vn_note": "Bài 9 KHÔNG có mục riêng về quá trình nóng lên của khí quyển; bài này là tài liệu bổ trợ cho mục 1 (khí quyển chịu ảnh hưởng của Mặt Trời, tr.28–29) và mục 2a (góc nhập xạ quyết định nhiệt độ theo vĩ độ, tr.29–30). Nội dung đối chiếu từ NGHIEN-CUU-KNTT-PHAN-2.md mục 2.4 dòng (a); chưa đối chiếu với sách giấy.",
+   "steps_vn": [
+    "Suy yếu",
+    "Mặt đất hấp thụ",
+    "Sóng dài",
+    "Giữ lại",
+    "Bức xạ ngược",
+    "Mây",
+    "Khí nhà kính",
+    "Đối chiếu Mặt Trăng",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/heating",
+   "built_file": "dist/heating-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 9,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 9 bước, 8 quiz. Tài liệu bổ trợ cho Bài 9 (không phải một mục của Bài 9); các số W·m⁻² là số minh hoạ của sách gốc."
+  },
+  {
+   "slug": "thermal",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "大气热力环流",
+   "title_vn": "Hoàn lưu nhiệt lực khí quyển",
+   "textbook_original": [
+    "人教版必修第一册 · 第二章第二节「大气热力环流」（p.36–38）、导入《台海使槎录》（p.34）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 4: Khí quyển",
+    "lesson": "Bài 9: Khí quyển, các yếu tố khí hậu",
+    "pages": "tr.28–34",
+    "section": "Mục 2 — Nhiệt độ không khí (tr.29–30): 2a theo vĩ độ (Bảng 9, vòng đai nhiệt), 2b theo lục địa – đại dương (Hình 9.2, vĩ tuyến 52°B), 2c theo địa hình (Hình 9.3, quy tắc 0,6°C/100 m); Luyện tập 1 tr.34"
+   },
+   "textbook_vn_note": "Nội dung Bài 9 đối chiếu từ VnDoc + loigiaihay + hoc247 + tech12h (xem NGHIEN-CUU-KNTT-PHAN-2.md mục 2); chưa đối chiếu với sách giấy. Cần giáo viên chốt: (1) thuật ngữ «gradient khí áp» và «lực gradient khí áp ngang» (SGK dùng «khí áp» nhưng không nêu tên lực này trong mục 2); (2) cách dùng bài trong tiết Bài 9 — bài gốc dạy cơ chế hoàn lưu nhiệt lực (nguyên nhân gió), còn SGK mục 2 chỉ nêu 3 quy luật phân bố nhiệt độ, nên dùng bài này làm phần dẫn vào mục 3 (khí áp và gió) hoặc làm bài mở rộng; (3) ví dụ Việt Nam (nhiệt độ TB năm Lạng Sơn 21,6°C → TP. Hồ Chí Minh 26,9°C; Sa Pa ~1.600 m, Đà Lạt ~1.500 m — Vận dụng 2) chỉ có 1 nguồn, chưa đối chiếu, ghi trong tài liệu nghiên cứu, không đưa vào nội dung bài.",
+   "steps_vn": [
+    "Chênh lệch nhiệt độ",
+    "Tầng cao",
+    "Gần mặt đất",
+    "Thành vòng",
+    "Mạnh / yếu",
+    "Gió biển",
+    "Gió đất",
+    "Đảo nhiệt",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/thermal",
+   "built_file": "dist/thermal-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 9,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 9 bước, 8 quiz. Ví dụ eo biển Đài Loan và đảo nhiệt đô thị giữ nguyên; bài dạy cơ chế hoàn lưu nhiệt lực — dùng làm phần dẫn vào mục 3 hoặc bài mở rộng."
+  },
+  {
+   "slug": "wind",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "大气的水平运动——风",
+   "title_vn": "Chuyển động ngang của khí quyển — Gió",
+   "textbook_original": [
+    "人教版必修第一册 · 第二章第二节「大气的水平运动——风」（p.38–40）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 4: Khí quyển",
+    "lesson": "Bài 9: Khí quyển, các yếu tố khí hậu",
+    "pages": "tr.28–34"
+   },
+   "textbook_vn_note": "Gió thuộc mục 3b (tr.32–33): các loại gió chính (gió Mậu dịch, gió Tây ôn đới, gió Đông cực, gió mùa; gió đất–gió biển, gió fơn) và Vận dụng 1 (gió Lào ở dãy Trường Sơn, tr.34). Bài mô phỏng này dạy cơ chế hình thành hướng gió và độ mạnh của gió (lực gra-đien khí áp, lực Cô-ri-ô-lít, lực ma sát) — cơ chế đứng sau Hình 9.4; các loại gió chính nêu trong SGK không có sẵn trong bài, giáo viên đối chiếu thêm khi dạy. Nội dung Bài 9 đối chiếu từ NGHIEN-CUU-KNTT-PHAN-2.md mục 2 (loigiaihay, VnDoc, tech12h, hoc247, vietjack); chưa đối chiếu với sách giấy. Lưu ý: VnDoc trả lời sai câu hỏi mục 3b (đưa đáp án về lượng mưa) — không dùng đáp án đó.",
+   "steps_vn": [
+    "Đường đẳng áp",
+    "Lực gra-đien khí áp",
+    "Lực Cô-ri-ô-lít",
+    "Gió trên cao",
+    "Gần mặt đất",
+    "Bán cầu Nam",
+    "Thưa – mau",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/wind",
+   "built_file": "dist/wind-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 8,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 8 bước, 8 quiz. Dạy cơ chế hình thành hướng gió (lực gra-đien khí áp, lực Cô-ri-ô-lít, ma sát) đứng sau Hình 9.4; các loại gió chính của SGK không có sẵn trong bài."
+  },
+  {
+   "slug": "circulation",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "气压带、风带与三圈环流",
+   "title_vn": "Đai khí áp, đới gió và hoàn lưu ba vòng",
+   "textbook_original": [
+    "人教版选择性必修 1 · 第三章第二节「气压带和风带」（p.48–53），第三节案例（p.56–57）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 4: Khí quyển",
+    "lesson": "Bài 9: Khí quyển, các yếu tố khí hậu",
+    "pages": "tr.28–34"
+   },
+   "textbook_vn_note": "Bài này đối chiếu với mục 3a (Khí áp, tr.31) và mục 3b (Gió, tr.32–33) của Bài 9, kèm Hình 9.4 (Các đai khí áp và gió trên Trái Đất) và Luyện tập 2 (tr.34). SGK KNTT KHÔNG dùng thuật ngữ «hoàn lưu khí quyển» và KHÔNG trình bày mô hình 3 vòng hoàn lưu (Hadley / Ferrel / Cực) một cách tường minh — mô hình 3 vòng trong bài này là mở rộng vượt SGK, chỉ dùng như phần mở rộng / minh hoạ cơ chế, không ghi là «theo SGK Bài 9». Nội dung Bài 9 đối chiếu từ VnDoc + loigiaihay + hoc247 (xem NGHIEN-CUU-KNTT-PHAN-2.md, mục 2); chưa đối chiếu với sách giấy.",
+   "steps_vn": [
+    "Áp thấp xích đạo",
+    "30° chìm xuống",
+    "60° trèo lên",
+    "Bảy đai, sáu đới gió",
+    "Dịch chuyển theo mùa",
+    "Phân bố lục địa – đại dương",
+    "Kiểm tra · Ma-gien-lăng"
+   ],
+   "source_dir": "src/lessons/circulation",
+   "built_file": "dist/circulation-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 7,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 7 bước, 8 quiz. Mô hình 3 vòng hoàn lưu là mở rộng vượt SGK; ví dụ Ma-gien-lăng và Rô-ma giữ nguyên."
+  },
+  {
+   "slug": "water-cycle",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "水循环的过程与地理意义",
+   "title_vn": "Quá trình vòng tuần hoàn nước và ý nghĩa địa lí",
+   "textbook_original": [
+    "人教版必修第一册 · 第三章第一节「水循环」（p.46–49）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 5: Thủy quyển",
+    "lesson": "Bài 11: Thủy quyển, nước trên lục địa",
+    "pages": "tr.37–40"
+   },
+   "textbook_vn_note": "Vòng tuần hoàn nước KHÔNG có trong Bài 11 KNTT (chỉ có ở SGK Địa lí 10 chương trình cũ, Bài 15: Thủy quyển — vòng nhỏ / vòng lớn). Bài mô phỏng này là kiến thức nền cho Bài 11, giữ hay cắt khỏi bộ Bài 11 sẽ quyết riêng sau — KHÔNG ghi là «theo SGK Bài 11». Phần khớp Bài 11 (tr.37–40): chế độ nước sông (2 nhóm nhân tố: nguồn cấp nước + bề mặt lưu vực), 5 loại hồ (núi lửa, kiến tạo, móng ngựa — ví dụ VN duy nhất trong SGK: Hồ Tây, Hà Nội; băng hà; nhân tạo), nước băng tuyết (trên 90% băng ở hai cực; sông băng dày trên 30 m, di chuyển vài cm–30 m/ngày), nước ngầm, 3 giải pháp bảo vệ nguồn nước ngọt. SGK Bài 11 chỉ nói tỉ lệ nước ngọt «rất nhỏ», KHÔNG đưa con số % nào. Đối chiếu từ NGHIEN-CUU-KNTT-PHAN-2.md mục 3 (5 nguồn giải bài); chưa đối chiếu với sách giấy.",
+   "steps_vn": [
+    "Toàn cảnh",
+    "Bốc hơi",
+    "Thoát hơi nước",
+    "Vận chuyển",
+    "Thấm",
+    "Ba loại",
+    "Ruộng cát",
+    "Ý nghĩa",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/water-cycle",
+   "built_file": "dist/water-cycle-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 9,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 9 bước, 8 quiz. Vòng tuần hoàn nước KHÔNG có trong Bài 11 KNTT — bài là kiến thức nền; giữ hay cắt quyết riêng sau."
+  },
+  {
+   "slug": "currents",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "世界洋流的分布规律与影响",
+   "title_vn": "Quy luật phân bố và ảnh hưởng của các dòng biển trên thế giới",
+   "textbook_original": [
+    "人教版选择性必修 1 · 第四章第二节「洋流」（p.68–71）；必修第一册第三章第二节「海水的性质」（p.50–56）、第三节「海水的运动」（p.61–62）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 5: Thủy quyển",
+    "lesson": "Bài 12: Nước biển và đại dương",
+    "section": "mục 1 (Tính chất của nước biển và đại dương) và mục 2c (Dòng biển)",
+    "pages": "tr.41–44"
+   },
+   "textbook_vn_note": "Bài này đối chiếu với Bài 12 mục 1 (độ muối, nhiệt độ — bước 6) và mục 2c (dòng biển — bước 1–5, 7–9). Đối chiếu từ NGHIEN-CUU-KNTT-PHAN-2.md mục 4 (sgkvn.com, VnDoc, VietJack, baitapsgk); chưa đối chiếu với sách giấy. Cần giáo viên chốt: (1) tên gọi một số dòng biển — sách gốc dùng tên mô tả (dòng nóng Nhật Bản, dòng nóng vịnh Mê-hi-cô, dòng lạnh Thiên Đảo), SGK Bài 12 dùng tên phiên âm trong bảng Hình 12.5 (Cư-rô-si-ô, Gơn-xtơ-rim, Mũi Kim); (2) chiều hoàn lưu (Bắc cùng chiều kim đồng hồ, Nam ngược chiều kim đồng hồ) suy từ Hình 12.5, không có nguyên văn trong phần lý thuyết SGK; (3) số liệu độ muối theo vĩ độ trong bài là số minh hoạ của sách gốc (cao nhất 35.8‰ ở 25°, xích đạo 35.1‰), khác số SGK (chí tuyến 36,8‰, xích đạo 34,5‰, ôn đới 35‰, gần cực 34‰) — giữ nguyên số gốc, không tự sửa. Bài gốc không nhắc biển Ban-tích hay Biển Đỏ nên không có mâu thuẫn trực tiếp M6 trong nội dung bài.",
+   "steps_vn": [
+    "Gió đẩy nước đi",
+    "Vĩ độ trung–thấp khép thành vòng",
+    "Vĩ độ trung–cao quay ngược lại",
+    "Dòng biển nóng/lạnh",
+    "Không khép vòng sẽ đổi chiều",
+    "Tính chất nước biển",
+    "Ảnh hưởng tới khí hậu",
+    "Ngư trường",
+    "Kiểm tra · Bốn trạm"
+   ],
+   "source_dir": "src/lessons/currents",
+   "built_file": "dist/currents-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 9,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 9 bước, 8 quiz. Số độ muối theo vĩ độ là số minh hoạ của sách gốc, khác số SGK nhưng quy luật khớp — giữ nguyên, không tự sửa."
+  },
+  {
+   "slug": "enso",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "海—气相互作用与厄尔尼诺、拉尼娜",
+   "title_vn": "Tương tác biển – khí với El Niño, La Niña",
+   "textbook_original": [
+    "人教版选择性必修 1「自然地理基础」· 第四章第三节「海—气相互作用」（p.72–76）"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 5: Thủy quyển",
+    "lesson": "Bài 12: Nước biển và đại dương (mở rộng)",
+    "pages": "tr.41–44"
+   },
+   "textbook_vn_note": "Bài 12 KNTT (tr.41–44) gồm tính chất nước biển (độ muối, nhiệt độ), sóng, thuỷ triều, dòng biển (mục 2c) và vai trò của biển; SGK Bài 12 KHÔNG nhắc tên El Niño/La Niña — bài mô phỏng này là nội dung mở rộng của mục 2c (dòng biển, nhiệt độ mặt nước biển), đối chiếu theo NGHIEN-CUU-KNTT-PHAN-2.md mục 4. Chưa đối chiếu với sách giấy.",
+   "steps_vn": [
+    "Trao đổi",
+    "Chênh lệch",
+    "Hoàn lưu",
+    "El Niño",
+    "Vượt ngưỡng",
+    "La Niña",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/enso",
+   "built_file": "dist/enso-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 7,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 7 bước, 8 quiz. SGK Bài 12 không nhắc El Niño/La Niña — bài là nội dung mở rộng của mục 2c."
+  },
+  {
+   "slug": "soil",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "土壤的主要形成因素与土壤剖面观察",
+   "title_vn": "Các nhân tố hình thành đất chủ yếu và quan sát phẫu diện đất",
+   "textbook_original": [
+    "必修第一册 · 第五章第二节「土壤」"
+   ],
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chương 6: Sinh quyển",
+    "lesson": "Bài 14: Đất trên Trái Đất",
+    "pages": "tr.45–46"
+   },
+   "textbook_vn_note": "Chưa đối chiếu sách giấy. Nội dung Bài 14 đối chiếu từ loigiaihay + VnDoc + Vietjack (xem NGHIEN-CUU-KNTT-PHAN-2.md mục 5). Khung nhân tố theo SGK KNTT Bài 14: 5 nhân tố tự nhiên — đá mẹ, khí hậu, địa hình, sinh vật, thời gian; con người KHÔNG phải nhân tố hình thành đất tự nhiên, chỉ có vai trò biến đổi đất. Có nguồn (tech12h) ghi 6 nhân tố (thêm con người), nghi lẫn bộ Chân trời sáng tạo (bộ CTST quy định 6 nhân tố gồm cả con người) — cần giáo viên kiểm sách giấy.",
+   "steps_vn": [
+    "Phẫu diện",
+    "Đá mẹ",
+    "Sinh vật",
+    "Khí hậu",
+    "Địa hình",
+    "Thời gian",
+    "Con người",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/soil",
+   "built_file": "dist/soil-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 8,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 8 bước, 8 quiz. Dùng khung 5 nhân tố hình thành đất theo KNTT; con người chỉ là yếu tố biến đổi đất."
+  },
+  {
+   "slug": "carbon",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_original": "全球气候变化与国家安全",
+   "title_vn": "Biến đổi khí hậu toàn cầu và an ninh quốc gia",
+   "textbook_original": [
+    "人教版选择性必修 3「资源、环境与国家安全」· 第三章第四节「全球气候变化与国家安全」（p.81–89）"
+   ],
+   "textbook_vn": {
+    "book": "Chuyên đề học tập Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022,
+    "chapter": "Chuyên đề 10.1: Biến đổi khí hậu",
+    "lesson": "Chuyên đề 10.1: Biến đổi khí hậu",
+    "pages": "tr.4–15"
+   },
+   "textbook_vn_note": "Chưa đối chiếu với sách giấy. Số liệu Bảng 1.1 (tỉ lệ phát thải khí nhà kính theo lĩnh vực, bản KNTT) chưa tìm được — tuyệt đối không dùng số liệu tỉ lệ phát thải theo lĩnh vực của bộ CTST/Cánh Diều; con số về tốc độ mực nước biển dâng chỉ có 1 nguồn, chưa đối chiếu nên không dùng. Nội dung Chuyên đề 10.1 đối chiếu từ NGHIEN-CUU-KNTT-PHAN-2.md mục 6.",
+   "steps_vn": [
+    "Chu trình carbon",
+    "Hai nguồn phát thải",
+    "Phát thải đi về đâu",
+    "Giữ nhiệt mạnh lên",
+    "Vượt ngưỡng",
+    "Quốc gia",
+    "Ứng phó",
+    "Kiểm tra"
+   ],
+   "source_dir": "src/lessons/carbon",
+   "built_file": "dist/carbon-step.html",
+   "status": "da_dich_day_du_2026-10-31, da_kiem_chung_headless",
+   "steps": 8,
+   "quiz": 8,
+   "translation_note": "Dịch đầy đủ 8 bước, 8 quiz. Số Bảng 1.1 chưa tìm được — không dùng số tỉ lệ phát thải của CTST/Cánh Diều."
+  },
+  {
+   "slug": "song-hong",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_vn": "Phân tích chế độ nước của sông Hồng",
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "chapter": "Chương 5: Thủy quyển",
+    "lesson": "Bài 13: Thực hành — Phân tích chế độ nước của sông Hồng",
+    "pages": "tr.44",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022
+   },
+   "textbook_vn_note": "Bài thực hành, không có mục lý thuyết. Bộ số 12 tháng của Bảng 13 đối chiếu từ Niên giám Thống kê 2023 (qua gauthmath.com): tổng khớp đúng 39.163 với mọi nguồn giải bài, nhưng đây là suy luận đối chiếu, chưa xác minh trực tiếp từng số với sách giấy — BẮT BUỘC kiểm sách giấy trước khi dùng chính thức ở lớp.",
+   "steps_vn": [
+    "Giới thiệu bài và Bảng 13",
+    "Đọc bảng và tính trung bình năm",
+    "Vẽ biểu đồ đường",
+    "Xác định mùa lũ",
+    "Xác định mùa cạn",
+    "Sông Hồng ngoài SGK",
+    "Đỉnh lũ lịch sử 1971",
+    "Kiểm tra (mô hình gốc)"
+   ],
+   "source_dir": "src/lessons/song-hong",
+   "built_file": "dist/song-hong-step.html",
+   "status": "viet_moi_2026-10-31, da_kiem_chung_headless",
+   "steps": 8,
+   "quiz": 8,
+   "translation_note": "Viết mới 100% tiếng Việt trên cảnh river (không phải bản dịch). 8 bước, 8 quiz; đáp án kiểm bằng máy đối chiếu Bảng 13. Cảnh 3D là sông mô phỏng chung, KHÔNG phải sông Hồng thật — ghi rõ trong bài."
+  },
+  {
+   "slug": "dia-doi",
+   "subject_original": "geo",
+   "subject_vn": "Địa lí",
+   "title_vn": "Quy luật địa đới và quy luật phi địa đới",
+   "textbook_vn": {
+    "book": "Địa lí 10 — Kết nối tri thức với cuộc sống",
+    "chapter": "Chương 7",
+    "lesson": "Bài 18: Quy luật địa đới và quy luật phi địa đới",
+    "pages": "tr.53–54",
+    "publisher": "NXB Giáo dục Việt Nam",
+    "year": 2022
+   },
+   "textbook_vn_note": "Nội dung theo NGHIEN-CUU-KNTT-PHAN-2.md mục 8 (đối chiếu loigiaihay, vietjack, vndoc, doctailieu, SBT Bài 18, giáo án Bài 18); chưa đối chiếu với sách giấy. Thứ tự đới đất và đới thực vật là nội dung mở rộng (theo SBT Bài 18), cần kiểm sách giấy. Số hiệu hình trong SGK chưa xác minh được.",
+   "steps_vn": [
+    "Khái niệm địa đới",
+    "Bảy vòng đai nhiệt",
+    "Đai khí áp và đới gió",
+    "Bảy đới khí hậu",
+    "Đới đất và thực vật",
+    "Khái niệm phi địa đới",
+    "Địa ô theo kinh độ",
+    "Đai cao theo độ cao",
+    "Tổng kết · Vận dụng"
+   ],
+   "source_dir": "src/lessons/dia-doi",
+   "built_file": "dist/dia-doi-step.html",
+   "status": "viet_moi_2026-10-31, da_kiem_chung_headless",
+   "steps": 9,
+   "quiz": 8,
+   "translation_note": "Viết mới 100% tiếng Việt trên cảnh insolation (không phải bản dịch). 9 bước, 8 quiz; tổng hợp từ các bài đã dịch (insolation, circulation, soil). Ranh giới vòng đai nhiệt theo đẳng nhiệt +20°C, không theo chí tuyến."
+  }
+ ]
+}
