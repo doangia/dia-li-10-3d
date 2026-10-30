@@ -50,17 +50,6 @@
   .btn.grad:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(47,107,255,.4)}
   .btn.ghost{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.06)}
   .btn.ghost:hover{background:rgba(255,255,255,.12)}
-  /* Hàng môn học: 4 thẻ, chồng lên hero (như trang gốc) */
-  .subjects{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:-34px 0 0;position:relative;z-index:2}
-  @media (max-width:900px){.subjects{grid-template-columns:1fr 1fr;margin-top:24px}}
-  @media (max-width:560px){.subjects{grid-template-columns:1fr}}
-  .subject{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow-1)}
-  .subject.off{opacity:.55}
-  .subject h3{margin:0 0 4px;font-size:17px}
-  .subject h3 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:1px}
-  .dot.geo{background:var(--geo)} .dot.phys{background:#3F7FB5} .dot.chem{background:#0B8A9C} .dot.bio{background:#2E8B57}
-  .subject p{margin:0;font-size:14px;color:var(--ink2)}
-  .subject .count{font-family:var(--num);font-weight:700;color:var(--sci-d)}
   /* Mục */
   section{padding:56px 0 0}
   .kick2{font:600 12px/1 var(--num);letter-spacing:.22em;color:var(--sci);margin-bottom:10px}
@@ -79,6 +68,7 @@
   .lcard .cover{display:block;overflow:hidden;aspect-ratio:16/9;background:#dce8ff}
   .tagrow{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--ink2);margin-bottom:6px}
   .tagrow .dot{width:8px;height:8px;border-radius:50%}
+  .dot.geo{background:var(--geo)}
   .tagrow .subj{font-weight:700;color:var(--ink)}
   .badge{font-size:12px;font-weight:600;padding:2px 8px;border-radius:20px;margin-left:auto}
   .badge.done{background:#e2f3e5;color:#1d6b2f}
@@ -114,19 +104,18 @@
 <body>
 <header class="nav"><div class="in">
   <a class="logo" href="#">Địa lí 10 · <em>3D</em></a>
-  <nav><a href="#lib">Thư viện bài học</a><a href="#how">Dùng trong lớp</a><a href="https://github.com/smithjohn78390/tongjiang-lab" target="_blank" rel="noopener">Kho gốc Tongjiang Lab</a></nav>
+  <nav><a href="#lib">Thư viện bài học</a><a href="#how">Dùng trong lớp</a></nav>
   <span class="rt">17 bài · CC BY-NC 4.0</span>
 </div></header>
 
 <section class="hero"><div class="in">
   <div>
-    <div class="kick">TONGJIANG LAB · BẢN VIỆT HOÁ — ĐỊA LÍ 10 KNTT</div>
+    <div class="kick">ĐỊA LÝ LAB</div>
     <h1>Đưa quá trình trong sách giáo khoa<br>thành <em>thí nghiệm 3D</em> chạm được</h1>
     <p class="sub">Đối chiếu chương trình Địa lí 10 bộ Kết nối tri thức. Mỗi bài là một thế giới 3D kéo thả, điều chỉnh, cắt lớp được — mở trực tiếp bằng trình duyệt, mất mạng vẫn chiếu được.</p>
     <div class="pills"><span><b>17</b> bài đã có</span><span><b>1</b> môn · Địa lí</span><span>Miễn phí</span><span>CC BY-NC 4.0</span></div>
     <div class="acts">
       <a class="btn grad" href="#lib">▶&nbsp; Bắt đầu học</a>
-      <a class="btn ghost" href="https://github.com/smithjohn78390/tongjiang-lab" target="_blank" rel="noopener">Kho gốc trên GitHub</a>
     </div>
   </div>
   <figure class="hero-visual" style="margin:0">
@@ -136,13 +125,6 @@
 </div></section>
 
 <main class="in">
-  <div class="subjects">
-    <div class="subject"><h3><span class="dot geo"></span>Địa lí</h3><p>Trái Đất chuyển động, khí quyển và địa hình — dùng một sa bàn biết thay đổi để giảng thấu.</p><p><span class="count">17 bài đã có</span></p></div>
-    <div class="subject off"><h3><span class="dot phys"></span>Vật lí</h3><p>Từ lực và chuyển động tới điện từ trường.</p><p>Chưa Việt hoá</p></div>
-    <div class="subject off"><h3><span class="dot chem"></span>Hoá học</h3><p>Từ mô hình phân tử tới cả nhà máy hoá chất.</p><p>Chưa Việt hoá</p></div>
-    <div class="subject off"><h3><span class="dot bio"></span>Sinh học</h3><p>Tế bào, phân tử và xung thần kinh.</p><p>Chưa Việt hoá</p></div>
-  </div>
-
   <section id="new">
     <div class="kick2">MỚI NHẤT</div>
     <h2>Bài mới làm xong</h2>
@@ -417,7 +399,6 @@
     <h5>Liên kết</h5>
     <ul>
       <li><a href="https://lab.tongjiang.app/" target="_blank" rel="noopener">Trang gốc Tongjiang Lab</a></li>
-      <li><a href="https://github.com/smithjohn78390/tongjiang-lab" target="_blank" rel="noopener">Kho gốc trên GitHub</a></li>
       <li><a href="https://github.com/doangia/dia-li-10-3d" target="_blank" rel="noopener">Kho bản Việt hoá này</a></li>
     </ul>
   </div>
